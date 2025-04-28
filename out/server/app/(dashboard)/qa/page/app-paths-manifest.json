@@ -1,0 +1,3 @@
+{
+  "/(dashboard)/qa/page": "app/(dashboard)/qa/page.js"
+}
