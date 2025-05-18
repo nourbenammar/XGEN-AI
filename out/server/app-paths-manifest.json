@@ -1,1 +1,7 @@
-{}
+{
+  "/(dashboard)/teacher/documents/[id]/page": "app/(dashboard)/teacher/documents/[id]/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/(dashboard)/syllabus/page": "app/(dashboard)/syllabus/page.js",
+  "/(dashboard)/teacher/documents/page": "app/(dashboard)/teacher/documents/page.js"
+}

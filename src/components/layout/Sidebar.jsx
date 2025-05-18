@@ -1,4 +1,3 @@
-// src/components/layout/Sidebar.jsx
 "use client";
 
 import { cn } from "@/lib/utils";
@@ -6,34 +5,63 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {
-  Book,
-  BookAIcon,
-  BookIcon,
-  BookImage,
-  GalleryVerticalEndIcon,
+  BookOpen,
+  FileText,
+  FileCheck,
+  FileSearch,
+  FileCog,
+  BookText,
+  Files,
   GraduationCap,
-  Home,
-  Paperclip,
-  Settings,
 } from "lucide-react";
 
 const sidebarNavItems = [
   {
     title: "Syllabus",
     href: "/syllabus",
-    icon: BookIcon,
+    icon: BookOpen,
     color: "text-red-500",
   },
   {
-    title: "Exam",
-    href: "/exam",
-    icon: GalleryVerticalEndIcon,
+    title: "Syllabus Generator",
+    href: "/syllabus_generator",
+    icon: FileText,
     color: "text-red-500",
   },
   {
-    title: "Settings",
-    href: "/settings",
-    icon: Settings,
+    title: "Exam Generation",
+    href: "/exam_generation",
+    icon: FileCheck,
+    color: "text-red-500",
+  },
+  {
+    title: "Exam Evaluation",
+    href: "/exam_evaluation",
+    icon: FileSearch,
+    color: "text-red-500",
+  },
+  {
+    title: "Alignemant Evaluation",
+    href: "/alignemant_evaluation",
+    icon: FileCog,
+    color: "text-red-500",
+  },
+  {
+    title: "Documents Chat",
+    href: "/student/chat/documents",
+    icon: Files,
+    color: "text-red-500",
+  },
+  {
+    title: "Documents Management",
+    href: "/teacher/documents",
+    icon: BookText,
+    color: "text-red-500",
+  },
+  {
+    title: "Course Generator",
+    href: "/teacher/course-generator",
+    icon: GraduationCap,
     color: "text-red-500",
   },
 ];
@@ -47,8 +75,8 @@ export function Sidebar({ isOpen, isMobile }) {
         "fixed left-0 border-r bg-white/50 dark:bg-slate-900/50 backdrop-blur-lg transition-all duration-300",
         isMobile ? "top-0 h-screen" : "top-14 h-[calc(100vh-3.5rem)]",
         isOpen ? "w-64" : "w-20",
-        !isOpen && isMobile ? "-left-full" : "left-0", // Slide in/out on mobile
-        isMobile && "z-50" // Ensure sidebar is above content on mobile
+        !isOpen && isMobile ? "-left-full" : "left-0",
+        isMobile && "z-50"
       )}
     >
       <ScrollArea className="h-full py-6">
