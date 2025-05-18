@@ -1,40 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# X-GEN : AI-Driven Education Design & Assessment Automation  
+A structured, dynamic, and personalized education design platform developed at **Esprit School of Engineering**.
 
-## Getting Started
+---
 
-First, run the development server:
+## 🌍 Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**X-GEN** is an AI-powered platform built to:
+- Evaluate and restructure academic syllabi
+- Align assessments with learning objectives
+- Automate question generation and time allocation
+- Standardize evaluation criteria
+- Enhance the quality, fairness, and efficiency of education
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project was created as part of the coursework in **AI for Education** at **Esprit School of Engineering**.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Features
+🔍 Syllabus Evaluation: Detects inconsistencies and misalignments in learning objectives (ILOs)
 
-## Learn More
+🧠 AI-Powered Recommendations: Improves syllabi and assessments using LLMs (Mistral, LLaMA 3/4, GPT-4, Groq)
 
-To learn more about Next.js, take a look at the following resources:
+📝 Exam Automation: Generates exams based on the syllabus, standardizes question weighting and timing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📊 Analytics Dashboard: Visualizes syllabus structure, Bloom’s taxonomy levels, and ILO coverage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🎯 Learning Outcome Optimization: Ensures all learning outcomes are SMART-compliant and Bloom-aligned
 
-## Deploy on Vercel
+🏗️ Syllabus Generator: Automatically creates structured and pedagogically sound course syllabi
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🧾 Exam Generation from Syllabus: Automatically generates exam papers fully aligned with ILOs and Bloom’s levels
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# AlumniEsprit
-=======
-# XGEN
->>>>>>> 7f5f4ea47235051ac5d70aa2668cf0d25880b27d
+⚖️ Question Weighting Engine: Assigns question weights based on complexity and cognitive level
+
+📚 Course Material Generator: Generates course content, exercises, and practical tasks based on syllabus inputs
+
+🤖 Student Revision Chatbot: AI-powered assistant to help students revise and prepare for assessments
+
+💬 Conversational AI Support: Assists educators in designing, auditing, and aligning their courses
+
+---
+
+## 🛠 Tech Stack
+
+### 🎨 Frontend
+- **React.js**
+- TailwindCSS
+- Axios
+
+### 🔧 Backend
+- **Flask**
+- FastAPI (for some AI endpoints)
+
+### 🧠 AI Models / Services
+- **Mistral 7B**, **LLaMA 3**, **LLaMA 4**
+- **Groq API** (for ultra-fast inference)
+- **OpenAI APIs** (GPT-4, GPT-3.5)
+- HuggingFace Transformers
+- LangChain for orchestration
+
+### ⚙️ DevOps / Tools
+- GitHub Education (Repo Hosting)
+- Heroku or DigitalOcean (for deployment)
+- Postman / Swagger (API testing)
+- Git for version control
